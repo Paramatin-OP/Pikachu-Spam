@@ -1,1 +1,48 @@
 
+from telethon import TelegramClient
+import logging
+import time
+import os
+
+
+logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
+                    level=logging.WARNING)
+
+# Basics
+try: 
+    APP_ID = os.environ.get("APP_ID", None)
+    API_HASH = os.environ.get("API_HASH", None)
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
+    BOT_TOKEN3 = os.environ.get("BOT_TOKEN3", None)
+    BOT_TOKEN2 = os.environ.get("BOT_TOKEN2", None)
+    BOT_TOKEN4 = os.environ.get("BOT_TOKEN4", None)
+    BOT_TOKEN5 = os.environ.get("BOT_TOKEN5", None)
+    SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
+except Exception:
+    pass
+if BOT_TOKEN:
+  bot = TelegramClient('PikaSpammer', APP_ID, API_HASH).start(bot_token=BOT_TOKEN) 
+else:
+  pass
+if BOT_TOKEN2:
+  bot2 = TelegramClient('PikaSpammer', APP_ID, API_HASH).start(bot_token=BOT_TOKEN2)
+else:
+  pass
+if BOT_TOKEN3:
+  bot3 = TelegramClient('PikaSpammer', APP_ID, API_HASH).start(bot_token=BOT_TOKEN3)
+else:
+  pass
+if BOT_TOKEN4:
+  bot4 = TelegramClient('PikaSpammer', APP_ID, API_HASH).start(bot_token=BOT_TOKEN4)
+else:
+  pass
+if BOT_TOKEN5:
+  bot5 = TelegramClient('PikaSpammer', APP_ID, API_HASH).start(bot_token=BOT_TOKEN5)
+else:
+  pass
+
+
+
+
+
+
