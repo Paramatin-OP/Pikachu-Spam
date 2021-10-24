@@ -1,6 +1,6 @@
 import os
 from telethon import events, Button, custom
-from Pikachu.thunderconfig import Config
+from Pikachu.config import Config
 
 from Pikachu import ALIVE_NAME, bot 
 
